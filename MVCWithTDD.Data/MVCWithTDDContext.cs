@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
+using MVCWithTDD.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -12,5 +14,7 @@ namespace MVCWithTDD.Data
             : base("MVCWithTDDContext")
         {
         }
+
+        public DbSet<Post> Posts { get; set; }
     }
 }

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWithTDD.Tests", "MVCWith
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWithTDD.Data", "MVCWithTDD.Data\MVCWithTDD.Data.csproj", "{596DBC89-7A01-43F4-ABDE-4A079F0E70CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWithTDD.Model", "MVCWithTDD.Model\MVCWithTDD.Model.csproj", "{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{596DBC89-7A01-43F4-ABDE-4A079F0E70CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596DBC89-7A01-43F4-ABDE-4A079F0E70CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596DBC89-7A01-43F4-ABDE-4A079F0E70CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
