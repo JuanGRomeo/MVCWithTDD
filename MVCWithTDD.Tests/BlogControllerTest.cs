@@ -5,6 +5,7 @@ using MVCWithTDD.Controllers;
 using Moq;
 using MVCWithTDD.Models;
 using System.Collections.Generic;
+using MVCWithTDD.Model;
 
 namespace MVCWithTDD.Tests
 {

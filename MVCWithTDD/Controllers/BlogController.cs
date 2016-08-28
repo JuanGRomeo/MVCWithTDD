@@ -1,4 +1,5 @@
-﻿using MVCWithTDD.Models;
+﻿using MVCWithTDD.Model;
+using MVCWithTDD.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

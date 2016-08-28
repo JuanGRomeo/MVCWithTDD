@@ -182,11 +182,16 @@
     </Compile>
     <Compile Include="Models\InMemoryPostRepository.cs" />
     <Compile Include="Models\IPostRepository.cs" />
-    <Compile Include="Models\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVCWithTDD.Model\MVCWithTDD.Model.csproj">
+      <Project>{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}</Project>
+      <Name>MVCWithTDD.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
