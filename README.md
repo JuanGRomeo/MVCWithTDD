@@ -1,3 +1,2 @@
 # MVCWithTDD
-### MVC Simple application developed with TDD
-Made with ❤ and TDD
+### MVC Simple application developed with ❤ and TDD
