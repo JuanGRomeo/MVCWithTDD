@@ -16,5 +16,10 @@ namespace MVCWithTDD.Data
         }
 
         public DbSet<Post> Posts { get; set; }
+
+        public virtual void Commit()
+        {
+            base.SaveChanges();
+        }
     }
 }

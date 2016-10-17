@@ -94,6 +94,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infraestructure\DatabaseFactory.cs" />
+    <Compile Include="Infraestructure\Disposable.cs" />
+    <Compile Include="Infraestructure\Interfaces\IDatabaseFactory.cs" />
+    <Compile Include="Infraestructure\Interfaces\IRepository.cs" />
+    <Compile Include="Infraestructure\Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Infraestructure\RepositoryBase.cs" />
+    <Compile Include="Infraestructure\UnitOfWork.cs" />
     <Compile Include="MVCWithTDDContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
