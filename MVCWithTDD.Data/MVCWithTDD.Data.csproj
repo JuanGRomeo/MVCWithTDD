@@ -103,6 +103,8 @@
     <Compile Include="Infraestructure\UnitOfWork.cs" />
     <Compile Include="MVCWithTDDContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Interfaces\IPostRepository.cs" />
+    <Compile Include="Repository\PostRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVCWithTDD.Model\MVCWithTDD.Model.csproj">
