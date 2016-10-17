@@ -15,14 +15,12 @@ namespace MVCWithTDD.Service.Test
     [TestClass]
     public class PostServiceTest
     {
-        private Mock<IPostService> mockedPostService;
         private Mock<IPostRepository> mockedPostRepository;
         private Mock<IUnitOfWork> mockedUnitOfWork;
 
         [TestInitialize]
         public void SetUp()
         {
-            mockedPostService = new Mock<IPostService>();
             mockedPostRepository = new Mock<IPostRepository>();
             mockedUnitOfWork = new Mock<IUnitOfWork>();
         }
