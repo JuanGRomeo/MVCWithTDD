@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace EnjoyMyTown.Data.Infraestructure.Interfaces
+namespace MVCWithTDD.Data.Infraestructure.Interfaces
 {
     public interface IRepository<T> where T : class
     {

@@ -1,7 +1,7 @@
-﻿using EnjoyMyTown.Data.Infraestructure.Interfaces;
+﻿using MVCWithTDD.Data.Infraestructure.Interfaces;
 using MVCWithTDD.Data;
 
-namespace EnjoyMyTown.Data.Infraestructure
+namespace MVCWithTDD.Data.Infraestructure
 {
     public class UnitOfWork : IUnitOfWork
     {

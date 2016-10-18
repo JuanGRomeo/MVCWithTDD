@@ -1,8 +1,8 @@
 ﻿using System;
-using EnjoyMyTown.Data.Infraestructure.Interfaces;
 using MVCWithTDD.Data;
+using MVCWithTDD.Data.Infraestructure.Interfaces;
 
-namespace EnjoyMyTown.Data.Infraestructure
+namespace MVCWithTDD.Data.Infraestructure
 {
     public class DatabaseFactory : Disposable, IDatabaseFactory
     {

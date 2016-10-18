@@ -1,12 +1,12 @@
-﻿using EnjoyMyTown.Data.Infraestructure.Interfaces;
-using MVCWithTDD.Data;
+﻿using MVCWithTDD.Data;
+using MVCWithTDD.Data.Infraestructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace EnjoyMyTown.Data.Infraestructure
+namespace MVCWithTDD.Data.Infraestructure
 {
     public abstract class RepositoryBase<T> where T : class
     {

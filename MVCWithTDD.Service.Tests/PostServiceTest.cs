@@ -1,6 +1,6 @@
-﻿using EnjoyMyTown.Data.Infraestructure.Interfaces;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using MVCWithTDD.Data.Infraestructure.Interfaces;
 using MVCWithTDD.Data.Repository.Interfaces;
 using MVCWithTDD.Model;
 using MVCWithTDD.Service.Interfaces;

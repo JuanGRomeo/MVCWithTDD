@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MVCWithTDD.Model;
 using MVCWithTDD.Data.Repository.Interfaces;
-using EnjoyMyTown.Data.Infraestructure.Interfaces;
+using MVCWithTDD.Data.Infraestructure.Interfaces;
 
 namespace MVCWithTDD.Service
 {

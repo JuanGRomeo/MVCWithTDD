@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EnjoyMyTown.Data.Infraestructure
+namespace MVCWithTDD.Data.Infraestructure
 {
     public class Disposable : IDisposable
     {

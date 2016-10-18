@@ -1,4 +1,4 @@
-﻿namespace EnjoyMyTown.Data.Infraestructure.Interfaces
+﻿namespace MVCWithTDD.Data.Infraestructure.Interfaces
 {
     public interface IUnitOfWork
     {

@@ -6,8 +6,8 @@ using MVCWithTDD.Service.Interfaces;
 using MVCWithTDD.Data.Repository;
 using MVCWithTDD.Service;
 using MVCWithTDD.Data.Repository.Interfaces;
-using EnjoyMyTown.Data.Infraestructure.Interfaces;
-using EnjoyMyTown.Data.Infraestructure;
+using MVCWithTDD.Data.Infraestructure.Interfaces;
+using MVCWithTDD.Data.Infraestructure;
 
 namespace MVCWithTDD.App_Start
 {

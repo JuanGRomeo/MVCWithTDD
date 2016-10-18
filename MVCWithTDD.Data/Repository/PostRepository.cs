@@ -1,5 +1,5 @@
-﻿using EnjoyMyTown.Data.Infraestructure;
-using EnjoyMyTown.Data.Infraestructure.Interfaces;
+﻿using MVCWithTDD.Data.Infraestructure;
+using MVCWithTDD.Data.Infraestructure.Interfaces;
 using MVCWithTDD.Data.Repository.Interfaces;
 using MVCWithTDD.Model;
 using System;
