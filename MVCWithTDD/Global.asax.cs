@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCWithTDD.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,8 @@ namespace MVCWithTDD
     {
         protected void Application_Start()
         {
+            System.Data.Entity.Database.SetInitializer(new MVCWithTDDSampleData());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -1,7 +1,13 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
-using MVCWithTDD.Models;
+
+using EnjoyMyTown.Data.Infraestructure.Interfaces;
+using MVCWithTDD.Service.Interfaces;
+using EnjoyMyTown.Data.Infraestructure;
+using MVCWithTDD.Data.Repository;
+using MVCWithTDD.Service;
+using MVCWithTDD.Data.Repository.Interfaces;
 
 namespace MVCWithTDD.App_Start
 {
@@ -39,6 +45,12 @@ namespace MVCWithTDD.App_Start
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
             //container.RegisterType<IPostRepository, InMemoryPostRepository>();
+
+            container.RegisterType<IUnitOfWork, UnitOfWork>(new PerRequestLifetimeManager());
+            container.RegisterType<IDatabaseFactory, DatabaseFactory>(new PerRequestLifetimeManager());
+
+            container.RegisterType<IPostRepository, PostRepository>(new PerRequestLifetimeManager());
+            container.RegisterType<IPostService, PostService>(new PerRequestLifetimeManager());
         }
     }
 }

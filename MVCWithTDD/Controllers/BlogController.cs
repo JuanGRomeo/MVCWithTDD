@@ -1,5 +1,6 @@
 ﻿using MVCWithTDD.Model;
 using MVCWithTDD.Models;
+using MVCWithTDD.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +11,17 @@ namespace MVCWithTDD.Controllers
 {
     public class BlogController : Controller
     {
-        IPostRepository postRepository;
+        IPostService postService;
 
-        public BlogController(IPostRepository postRepository)
+        public BlogController(IPostService postService)
         {
-            this.postRepository = postRepository;
+            this.postService = postService;
         }
 
         // GET: Blog
         public ActionResult Recent()
         {
-            IList<Post> posts = postRepository.ListRecentPosts(10); //Doh! Magic Number!
+            List<Post> posts = this.postService.ListRecentPosts(5);
             return View(posts);
         }
     }

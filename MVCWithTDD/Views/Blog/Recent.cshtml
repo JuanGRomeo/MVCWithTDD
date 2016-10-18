@@ -1,7 +1,15 @@
-﻿
+﻿@using MVCWithTDD.Model;
+
+@model List<MVCWithTDD.Model.Post>
 @{
     ViewBag.Title = "Recent";
 }
 
 <h2>Recent</h2>
 
+@foreach (Post post in Model)
+{
+    <h1>@post.Title</h1>
+    <br />
+    <p>@post.Content</p>
+}

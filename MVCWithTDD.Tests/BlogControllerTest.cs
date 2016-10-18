@@ -1,51 +1,51 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Web.Mvc;
-using MVCWithTDD.Controllers;
 using Moq;
 using MVCWithTDD.Models;
 using System.Collections.Generic;
 using MVCWithTDD.Model;
+using MVCWithTDD.Service.Interfaces;
+using MVCWithTDD.Controllers;
 
 namespace MVCWithTDD.Tests
 {
     [TestClass]
     public class BlogControllerTests
     {
+        private Mock<IPostService> mockedPostService;
+
+        [TestInitialize]
+        public void SetUp()
+        {
+            mockedPostService = new Mock<IPostService>();
+        }
+
         [TestMethod]
         public void RecentActionUsesConventionToChooseView()
         {
-            //Arrange
-            var repository = new Mock<IPostRepository>();
-            var controller = new BlogController(repository.Object);
+            var controller = new BlogController(mockedPostService.Object);
 
-            //Act
             var result = controller.Recent() as ViewResult;
 
-            //Assert
             Assert.IsNotNull(result);
-
         }
 
         [TestMethod]
         public void BlogControllerPassesCorrectViewData()
         {
-            //Arrange
             var posts = new List<Post>()
             {
                 new Post(),
                 new Post()
             };
 
-            var repository = new Mock<IPostRepository>();
-            repository.Setup(r => r.ListRecentPosts(It.IsAny<int>())).Returns(posts);
+            mockedPostService.Setup(r => r.ListRecentPosts(It.IsAny<int>())).Returns(posts);
 
-            //Act
-            BlogController controller = new BlogController(repository.Object);
+            BlogController controller = new BlogController(mockedPostService.Object);
             var result = controller.Recent() as ViewResult;
 
-            //Assert
-            var model = result.ViewData.Model as IList<Post>;
+            var model = result.ViewData.Model as List<Post>;
             Assert.IsNotNull(model);
         }
     }

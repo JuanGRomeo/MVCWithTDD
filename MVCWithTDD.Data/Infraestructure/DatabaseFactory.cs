@@ -10,7 +10,7 @@ namespace EnjoyMyTown.Data.Infraestructure
 
         public MVCWithTDDContext Get()
         {
-            throw new NotImplementedException();
+            return dataContext ?? (dataContext = new MVCWithTDDContext());
         }
 
         protected override void DisposeCore()

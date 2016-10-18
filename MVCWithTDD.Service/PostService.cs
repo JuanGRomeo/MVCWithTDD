@@ -30,7 +30,7 @@ namespace MVCWithTDD.Service
 
         public List<Post> ListRecentPosts(int retrievalCount)
         {
-            return this.postRepository.GetAll().OrderByDescending(post => post.IdPost).Take(retrievalCount).ToList();
+            return this.postRepository.GetAll().OrderByDescending(post => post.PostId).Take(retrievalCount).ToList();
         }
     }
 }

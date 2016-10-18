@@ -9,7 +9,7 @@ namespace MVCWithTDD.Model
     public class Post
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdPost { get; protected set; }
+        public int PostId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
     }
