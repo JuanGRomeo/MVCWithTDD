@@ -2,11 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Web.Mvc;
 using Moq;
-using MVCWithTDD.Models;
 using System.Collections.Generic;
-using MVCWithTDD.Model;
 using MVCWithTDD.Service.Interfaces;
 using MVCWithTDD.Controllers;
+using MVCWithTDD.Model;
 
 namespace MVCWithTDD.Tests
 {

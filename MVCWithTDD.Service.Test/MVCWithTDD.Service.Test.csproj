@@ -58,11 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVCWithTDD.Data\MVCWithTDD.Data.csproj">
-      <Project>{596DBC89-7A01-43F4-ABDE-4A079F0E70CF}</Project>
+      <Project>{E9D2CB9A-171F-480C-8CFB-C219594DB68F}</Project>
       <Name>MVCWithTDD.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\MVCWithTDD.Model\MVCWithTDD.Model.csproj">
-      <Project>{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}</Project>
+      <Project>{a55f67e9-32c3-404a-819a-09c3d43fddcd}</Project>
       <Name>MVCWithTDD.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\MVCWithTDD.Service\MVCWithTDD.Service.csproj">

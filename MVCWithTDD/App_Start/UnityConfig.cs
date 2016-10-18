@@ -2,12 +2,12 @@ using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
-using EnjoyMyTown.Data.Infraestructure.Interfaces;
 using MVCWithTDD.Service.Interfaces;
-using EnjoyMyTown.Data.Infraestructure;
 using MVCWithTDD.Data.Repository;
 using MVCWithTDD.Service;
 using MVCWithTDD.Data.Repository.Interfaces;
+using EnjoyMyTown.Data.Infraestructure.Interfaces;
+using EnjoyMyTown.Data.Infraestructure;
 
 namespace MVCWithTDD.App_Start
 {

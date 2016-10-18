@@ -16,8 +16,7 @@ namespace MVCWithTDD.Models
             posts.Add(post);
         }
 
-        public System.Collections.Generic.IList<Post>
-          ListRecentPosts(int retrievalCount)
+        public IList<Post> ListRecentPosts(int retrievalCount)
         {
             if (retrievalCount < 0)
                 throw new ArgumentOutOfRangeException("retrievalCount"

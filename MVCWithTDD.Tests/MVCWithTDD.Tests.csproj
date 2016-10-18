@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVCWithTDD.Model\MVCWithTDD.Model.csproj">
-      <Project>{AE93B7AB-32AF-476B-ACF6-B3E7B1897E4D}</Project>
+      <Project>{A55F67E9-32C3-404A-819A-09C3D43FDDCD}</Project>
       <Name>MVCWithTDD.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\MVCWithTDD.Service\MVCWithTDD.Service.csproj">
